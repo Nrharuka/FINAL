@@ -10,6 +10,7 @@
 </head>
 <body>
     <h1>Recommended Cafe</h1>
+    <hr width="90%" noshade>
     
     <div class="wrapper">
     <ul class="tab">

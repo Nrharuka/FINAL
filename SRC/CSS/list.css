@@ -1,3 +1,20 @@
+h1{
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
 p{
-    font-family: M PLUS 1p;
+    font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
+    font-weight: 400;
+}
+
+.name{
+    font-size: 30px;
+    font-family: 'Vollkorn', serif;
+    display:flex;
+    text-align: center;
+}
+
+.address{
+    font-size: 18px;
+    display: inline-block;
 }

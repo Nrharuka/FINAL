@@ -10,7 +10,6 @@ h1{
     font-family: 'Cherry Swash', cursive;
     text-align: center;
 }
-
 /*tabの形状*/
 .tab{
   display: flex;
