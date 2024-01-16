@@ -1,42 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/list.css">
+    <title>一覧</title>
+</head>
+<body>
+    <p>一覧</p>
 <?php
-    const SERVER = 'mysql220.phy.lolipop.lan';
-    const DBNAME = 'LAA1517432-FINAL';
-    const USER = 'LAA1517432';
-    const PASS = 'Pass0617';
-
-    $connect = 'mysql:host=' . SERVER . ';dbname=' . DBNAME . ';charset=utf8';
+    $pdo=new PDO('mysql:host=mysql220.phy.lolipop.lan;dbname=LAA1517432-final;charset=utf8','LAA1517432','Pass0617');
+    foreach ($pdo->query('select * from Cafe') as $row) {
+        echo '<p>';
+        echo $row['cafe_name'];
+        echo '　　';
+        echo $row['cafe_address'];
+        echo '</p>';
+    }
 ?>
-
-<?php require 'header.php'; ?>
-<?php require 'menu.php'; ?>
-<form action="product.php" method="post">
-商品検索
-<input type="text" name="keyword">
-<input type="submit" value="検索">
-</form>
-<hr>
-<?php
-    echo '<table>';
-    echo '<tr><th>カフェID</th><th>カフェ名</th><th>カテゴリ</th><th>住所</th></tr>';
-    $pdo=new PDO($connect,USER,PASS);
-if (isset($_REQUEST['keyword'])) {
-    $sql=$pdo->prepare('select * from Cafe where cafe_id like ?');
-
-    $sql->execute(['%'.$_REQUEST['keyword'].'%']);
-} else {
-    $sql=$pdo->query('select * from Cafe');
-}
-
-foreach ($sql as $row) {
-    $id=$row['cafe_id'];
-    echo '<tr>';
-    echo '<td>',$id,'</td>';
-    echo '<td>';
-    echo '<a href="detail.php?id=', $id, '">', $row['cafe_name'], '</a>';
-    echo '</td>';
-    echo '</tr>';
-}
-    echo '</table>';
-?>
-
-<?php require 'footer.php'; ?>
+</body>
+</html>
