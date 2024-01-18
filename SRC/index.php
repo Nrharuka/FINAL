@@ -9,13 +9,13 @@
     <title>おすすめカフェ管理システム</title>
 </head>
 <body>
-    <h1>Recommended Cafe</h1>
+    <h1>୨୧ Recommended Cafe ୨୧</h1>
     <hr width="90%" noshade>
     
     <div class="wrapper">
     <ul class="tab">
     <li><a href="list.php">一覧</a></li>
-    <li><a href="registration.php">登録</a></li>
+    <li><a href="registration-input.php">登録</a></li>
     <li><a href="update.php">更新</a></li>
     <li><a href="delete.php">削除</a></li>
     </ul>
