@@ -12,14 +12,37 @@
     <h1>୨୧ Recommended Cafe ୨୧</h1>
     <hr width="90%" noshade>
     <div class="registration">
-    <p>商品を追加します。　　　　　　　　　　　　　　</p>
-    <form action="ren6-5-output.php" method="post">
-       カフェＩＤ：<input type="number" name="id" size="5px" required="required"><br>
-        カフェ名：<textarea name="name" cols="20" rows="1.9" required="required"></textarea><br>
-        カテゴリーコード：<input type="number" name="category_code" size="5px" required="required"><br>
-        住所：<textarea type="text" name="address" cols="25" rows="1.9" required="required"></textarea>
+    <p>商品を追加します。　　　　　　　　</p>
+    <form class="input" action="registration-output.php" method="post">
+
+        <table>
+            <tr>
+                <th><label for="name">カフェ名：</label></th>
+                <td><input class="cafe_input" id="name" name="cafe_name" required="required"></textarea></td>
+
+            </tr>
+
+            <tr>
+                <th><label for="category_code">カテゴリー：</label></th>
+                <td>
+                <select class="cafe_input" id="category_code" name="category_code" required="required">
+                    <option value="1">福岡市博多区</option>
+                    <option value="2">福岡市天神</option>
+                    <option value="3">福岡市中央区大名</option>
+                    <option value="4">福岡市中央区平尾</option>
+                </td>
+                </select>
+            </tr>
+
+            <tr>
+                <th><label for="address">住所：</label></th>
+                <td><textarea id="address" name="cafe_address" cols="28" rows="3" required="required"></textarea></td>
+            </tr>
+        </table>
+
     <br><br>
-        　　　　　　　　　　　　　　　　　　<button type="submit">追加</button>
+    　　　　　　　　　　　　<input class="button" type="submit" value="追加"><input class="button" type="reset" value="リセット">
+    </form>
     </div>
 </body>
 </html>

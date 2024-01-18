@@ -1,20 +1,28 @@
-.list{
+.list {
     font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-p{
+p {
     font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.name{
+.name_box {
+    display:flex;
+    justify-content: center;
+} 
+
+.address_box {
+    display:flex;
+    justify-content: center;
+}
+
+.name {
     font-size: 30px;
     font-family: 'Vollkorn', serif;
-    display:flex;
-    text-align: center;
 }
 
-.address{
+.address {
     font-size: 18px;
     display: inline-block;
 }

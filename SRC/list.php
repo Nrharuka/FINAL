@@ -17,12 +17,16 @@
         $pdo=new PDO('mysql:host=mysql220.phy.lolipop.lan;dbname=LAA1517432-final;charset=utf8','LAA1517432','Pass0617');
         foreach ($pdo->query('select * from Cafe') as $row) {
             echo '<p>';
+            echo '<div class="name_box">';
             echo '<div class="name">';
             echo '꒰⑅ ', $row['cafe_name'], ' ⑅꒱';
             echo '</div>';
+            echo '</div>';
             echo '　　';
+            echo '<div class="address_box">';
             echo '<div class="address">';
             echo $row['cafe_address'];
+            echo '</div>';
             echo '</div>';
             echo '</p>';
             echo '<hr>';
