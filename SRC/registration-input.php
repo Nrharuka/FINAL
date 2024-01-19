@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cherry+Swash:700">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/registration.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cherry+Swash:700">
     <title>登録</title>
 </head>
 <body>
-    <h1>୨୧ Recommended Cafe ୨୧</h1>
-    <hr width="90%" noshade>
+    <div class="header-container">
+        <a href="index.php" class="arrow-link"> ＜＜ </a>
+        <h1>୨୧ Recommended Cafe ୨୧</h1>
+    </div>
+        <hr width="90%" noshade>
+    <br>
     <div class="registration">
     <p>商品を追加します。　　　　　　　　</p>
     <form class="input" action="registration-output.php" method="post">
 
         <table>
             <tr>
-                <th><label for="name">カフェ名：</label></th>
-                <td><input class="cafe_input" id="name" name="cafe_name" required="required"></textarea></td>
+                <th><label for="cafe_name">カフェ名：</label></th>
+                <td><input class="cafe_input" id="cafe_name" name="cafe_name" required="required"></td>
 
             </tr>
 
@@ -41,7 +45,7 @@
         </table>
 
     <br><br>
-    　　　　　　　　　　　　<input class="button" type="submit" value="追加"><input class="button" type="reset" value="リセット">
+    　　　　　　　　　　<input class="button" type="reset" value="リセット"><input class="button" type="submit" value="追加">
     </form>
     </div>
 </body>

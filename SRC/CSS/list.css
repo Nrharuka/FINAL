@@ -22,7 +22,11 @@ p {
     font-family: 'Vollkorn', serif;
 }
 
+.cafe_img {
+    height: 400px;
+}
+
 .address {
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
 }

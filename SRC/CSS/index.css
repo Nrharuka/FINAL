@@ -1,24 +1,43 @@
 @charset "UTF-8";
 
-/* body{
-    background-color: #ffffff;
-} */
+body{
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center; /* 横方向に中央寄せ */
+  align-items: center; /* 垂直方向に中央寄せ */
+  text-align: left;
+}
+
+.arrow-link {
+  margin-right: 10px; /* 右側のマージンを調整してください */
+  text-decoration: none;
+  color: black; /* リンクの色を指定 */
+  display: inline-block; /* inline-block に設定して横並びに */
+}
 
 h1{
     /* font-family: 'Corben', cursive; */
     /* font-family: 'Vollkorn', serif; */
     font-family: 'Cherry Swash', cursive;
-    text-align: center;
+    margin: 0;
+    display: inline;
 }
+
 /*tabの形状*/
 .tab{
   display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .tab li a{
-  display: block;
+  display: inline-block;
   background:#ddd;
-  margin:0 2px;
-  padding:10px 20px;
+  margin:0 10px;
+  padding:20px 40px;
+  border-radius: 8px;
 }
 /*liにactiveクラスがついた時の形状*/
 .tab li.active a{
@@ -53,10 +72,6 @@ h1{
 
 /*========= レイアウトのためのCSS ===============*/
 
-body{
-  background:#ffffff;
-}
-
 ul{
   list-style:none;
 }
@@ -68,6 +83,8 @@ a{
 
 .wrapper{
   margin:30px auto;
+  display: flex;
+  justify-content: center;
 }
 
 .area h2{

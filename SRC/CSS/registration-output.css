@@ -42,6 +42,8 @@ tr {
 
 th, td {
     padding: 8px; /* セルの余白を設定 */
+    border: 1px solid #000000; /* 必要に応じてセルごとの境界を設定 */
+    text-align: center; /* セル内のテキストを中央寄せにする */
 }
 
 .cafe_input {

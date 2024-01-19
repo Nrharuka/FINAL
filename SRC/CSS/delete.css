@@ -3,21 +3,11 @@ body {
     margin: auto;
 }
 
-.registration {
-    text-align: center;
-}
-
 p{
     font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", sans-serif;
     font-weight: 500;
     font-size: 22px;
 }
-
-/* label {
-    display: inline-block;
-    text-align: right;
-    width: 150px;
-} */
 
 table {
     border-collapse: collapse; /* セルの境界を縮小 */
@@ -30,34 +20,14 @@ table, th, td {
     border: none; /* テーブル全体、ヘッダーセル、データセルの境界を削除 */
 }
 
-th {
-    font-size: 18px;
-    text-align: center;
-}
-
-tr {
-    margin-bottom: 1em;
-
-}
-
 th, td {
     padding: 8px; /* セルの余白を設定 */
-}
-
-.cafe_input {
-    width: 100%;
-    padding: 0.2em;
-}
-
-.input th {
-    text-align: right;
-    vertical-align:top;
+    border: 1px solid #000000; /* 必要に応じてセルごとの境界を設定 */
 }
 
 .button {
     font-size: 16px; /* ボタンの文字サイズを調整 */
     padding: 10px 20px; /* パディングを追加してボタンの大きさを調整 */
     border-radius: 8px; /* ボタンの角を丸くする */
-    margin:0 10px;
     border: 1.5px solid #7d7b7b;
 } 

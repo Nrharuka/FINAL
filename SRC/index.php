@@ -16,17 +16,12 @@
     <ul class="tab">
     <li><a href="list.php">一覧</a></li>
     <li><a href="registration-input.php">登録</a></li>
-    <li><a href="update.php">更新</a></li>
-    <li><a href="delete.php">削除</a></li>
+    <li><a href="update-input.php">更新</a></li>
+    <li><a href="delete-input.php">削除</a></li>
     </ul>
     </div>
-    
-    <!-- <div class="search">
-            <form action="searchlist.php" method="post">
-                <input class="keyword" type="text" name="keyword" placeholder="  🔍       キーワード検索">
-                <input class="search2" type="submit" name="search" value="検索"><br><br>
-            </form>
-    </div> -->
+
+    <img src="IMG/cake.jpg" width="600px"/>
 
 </body>
 </html>
